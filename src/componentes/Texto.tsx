@@ -3,7 +3,7 @@ import { Text, StyleSheet, TextStyle } from "react-native";
 
 type TextoProps = {
     children: ReactNode;
-    style: TextStyle;
+    style?: TextStyle;
 }
 
 const Texto: React.FC<TextoProps> = ({ children, style }) => {
