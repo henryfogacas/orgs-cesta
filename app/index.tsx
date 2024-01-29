@@ -14,7 +14,7 @@ const App = () => {
     return <AppLoading />
   }
 
-  return <SafeAreaView>
+  return <SafeAreaView style={{ flex: 1 }}>
     <StatusBar />
     <Cesta {...mocksCesta} />
   </SafeAreaView>
