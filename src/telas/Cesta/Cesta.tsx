@@ -3,17 +3,20 @@ import { StyleSheet, Image, View } from 'react-native';
 
 import Topo, { TopoProps } from './componentes/Topo'
 import Detalhes, { DetalhesProps } from "./componentes/Detalhes";
+import Botao, { BotaoProps } from "./componentes/Botao";
 
 type CestaProps = {
     topo: TopoProps;
     detalhes: DetalhesProps;
+    botao: BotaoProps;
 };
 
-const Cesta: React.FC<CestaProps> = ({ topo, detalhes }) => {
+const Cesta: React.FC<CestaProps> = ({ topo, detalhes, botao }) => {
     return <>
-    <Topo {...topo}/>
+        <Topo {...topo} />
         <View style={estilos.cesta}>
-            <Detalhes {...detalhes}/>
+            <Detalhes {...detalhes} />
+            <Botao {...botao}/>
         </View>
     </>
 }

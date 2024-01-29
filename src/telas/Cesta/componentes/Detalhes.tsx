@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Image, View } from 'react-native';
+import { StyleSheet, Image, View, TouchableOpacity } from 'react-native';
 
 import Texto from '../../../componentes/Texto'
 
@@ -13,13 +13,13 @@ export type DetalhesProps = {
 
 const Detalhes: React.FC<DetalhesProps> = ({ nome, logoFazenda, nomeFazenda, descricao, preco }) => {
     return <>
-        <Texto style={estilos.nome}>{ nome }</Texto>
+        <Texto style={estilos.nome}>{nome}</Texto>
         <View style={estilos.fazenda}>
             <Image source={logoFazenda} style={estilos.imagemFazenda} />
-            <Texto style={estilos.nomeFazenda}>{ nomeFazenda }</Texto>
+            <Texto style={estilos.nomeFazenda}>{nomeFazenda}</Texto>
         </View>
-        <Texto style={estilos.descricao}> { descricao }</Texto>
-        <Texto style={estilos.preco}>{ preco }</Texto>
+        <Texto style={estilos.descricao}> {descricao}</Texto>
+        <Texto style={estilos.preco}>{preco}</Texto>
     </>
 }
 
@@ -58,7 +58,7 @@ const estilos = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8,
-    }
+    },
 })
 
 

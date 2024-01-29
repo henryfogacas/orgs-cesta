@@ -13,8 +13,8 @@ export type TopoProps = {
 const Topo: React.FC<TopoProps> = ({ titulo }) => {
     return <>
         <Image source={topo} style={estilos.topo} />
-        <Texto style={estilos.titulo}>{ titulo}</Texto>
-    </> 
+        <Texto style={estilos.titulo}>{titulo}</Texto>
+    </>
 }
 
 const estilos = StyleSheet.create({

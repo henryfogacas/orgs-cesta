@@ -16,7 +16,7 @@ const App = () => {
 
   return <SafeAreaView>
     <StatusBar />
-    <Cesta {...mocksCesta}/>
+    <Cesta {...mocksCesta} />
   </SafeAreaView>
 }
 
