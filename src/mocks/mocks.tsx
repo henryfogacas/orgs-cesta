@@ -17,7 +17,9 @@ const mocksCesta = {
         preco: "R$ 40,00",
     },
     botao: {
-        botao: "Comprar",
+        botao: "Adicionar ao carrinho",
+        popup: "Produto adicionado ao carrinho!",
+        fecharPopup: "Fechar confirmação",
     },
     itens: {
         titulo: "Itens da cesta",
